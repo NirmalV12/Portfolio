@@ -213,8 +213,8 @@ footer a:visited {
 /* About Section */
 #about {
     padding: 80px 20px;
-    text-align: left;
-    font-size: 1.26em;
+    text-align: Center;
+    font-size: 2.5remem;
 }
 
 #about h2 {
