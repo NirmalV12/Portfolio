@@ -293,6 +293,17 @@ h2 {
     color: #555;
 }
 
+.experience-content ul {
+    line-height: 1.8; /* Increase line spacing between bullets */
+    margin-bottom: 15px; /* Space below the entire list */
+    padding-left: 20px; /* Indent bullet points */
+}
+
+.experience-content li {
+    margin-bottom: 10px; /* Space between individual bullet points */
+    text-align: justify; /* Justify text for cleaner alignment */
+}
+
 /* Work Experience Hover Effects */
 .experience-item:hover .experience-content {
     background-color: #e8e8e8;
