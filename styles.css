@@ -224,7 +224,7 @@ h2 {
 /* Central Line */
 .central-line {
     width: 2px;
-    background-color: #6A1B9A; /* Purple color */
+    background-color: #007bff; /* Purple color */
     height: 100%;
     position: absolute;
     top: 0;
@@ -252,7 +252,7 @@ h2 {
 .icon {
     width: 40px;
     height: 40px;
-    background-color: #6A1B9A;
+    background-color: #b5b5b5;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -282,7 +282,7 @@ h2 {
 
 .timeline-date {
     font-size: 1rem;
-    color: #6A1B9A;
+    color: #333;
     margin-top: 5px;
 }
 
@@ -293,12 +293,12 @@ h2 {
 
 /* Work Experience Hover Effects */
 .experience-item:hover .experience-content {
-    background-color: #6A1B9A;
+    background-color: #e8e8e8;
     color: white;
 }
 
 .experience-item:hover .icon {
-    background-color: #333;
+    background-color: #353536;
 }
 
 /* Mobile Responsiveness */
