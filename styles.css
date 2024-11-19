@@ -324,6 +324,10 @@ h2 {
 .education-column, .publications-column {
     flex: 1;
     min-width: 280px; /* Ensure proper layout on small screens */
+    border: 1px solid #ddd; /* Thin border around both columns */
+    padding: 20px; /* Padding inside the columns for spacing */
+    border-radius: 8px; /* Optional: rounded corners for a smooth effect */
+    background-color: #fff; /* White background for the columns */
 }
 
 .education-column h3, .publications-column h3 {
