@@ -217,11 +217,6 @@ footer a:visited {
     font-size: 2.5remem;
 }
 
-#about h2 {
-    margin-bottom: 40px; /* Consistent spacing */
-    font-size: 2.5rem; /* Same size as other titles */
-    color: #333; /* Same color as other titles */
-}
 
 #about p {
     font-size: 1.01em;
