@@ -252,7 +252,7 @@ h2 {
 .icon {
     width: 40px;
     height: 40px;
-    background-color: #b5b5b5;
+    background-color: #aed7fc;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -294,7 +294,7 @@ h2 {
 /* Work Experience Hover Effects */
 .experience-item:hover .experience-content {
     background-color: #e8e8e8;
-    color: white;
+    color: #000000;
 }
 
 .experience-item:hover .icon {
