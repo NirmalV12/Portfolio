@@ -325,7 +325,7 @@ h2 {
     flex: 1;
     min-width: 280px; /* Ensure proper layout on small screens */
     border: 1px solid #ddd; /* Thin border around both columns */
-    padding: 20px; /* Padding inside the columns for spacing */
+    padding: 30px; /* Padding inside the columns for spacing */
     border-radius: 8px; /* Optional: rounded corners for a smooth effect */
     background-color: #fff; /* White background for the columns */
 }
@@ -340,11 +340,13 @@ h2 {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .education-column ul li, .publications-column ul li {
     margin-bottom: 15px;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 /* Left-align degree names and university names in Education */
@@ -375,6 +377,7 @@ h2 {
 /* Underline on hover for publication links */
 .publications-column a:hover {
     text-decoration: underline; /* Underline on hover */
+    text-align: center;
 }
 
 /* Mobile Responsiveness */
