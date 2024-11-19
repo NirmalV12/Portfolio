@@ -51,10 +51,6 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
-.nav-links a.active {
-    background-color: #007bff;
-}
-
 .nav-links a:hover {
     background-color: #007bff;
 }
