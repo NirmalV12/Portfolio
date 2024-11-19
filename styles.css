@@ -308,7 +308,7 @@ h2 {
     }
 }
 
-/* Education & Publications Section */
+//* Education & Publications Section */
 #education-publications {
     padding: 80px 20px;
     background-color: #f8f8f8; /* Light background to differentiate from other sections */
@@ -340,13 +340,11 @@ h2 {
     list-style: none;
     padding: 0;
     margin: 0;
-   
 }
 
 .education-column ul li, .publications-column ul li {
     margin-bottom: 15px;
     font-size: 1.1rem;
-    text-align: center;
 }
 
 /* Left-align degree names and university names in Education */
@@ -360,24 +358,23 @@ h2 {
     text-align: left; /* Left-align degree names */
 }
 
-/* Ensure proper formatting for publications with left-aligned titles */
+/* Center-align publication event titles in Publications */
 .publications-column p {
     font-size: 1.1rem;
     margin-top: 5px;
-    text-align: left;
+    text-align: center; /* Center-align publication event titles */
 }
 
+/* Styling for publication links */
 .publications-column a {
     color: inherit; /* Remove blue color */
-    text-decoration: underline; /* No underline by default */
+    text-decoration: underline; /* Underline by default */
     font-weight: bold; /* Make publication titles stand out */
-    text-align: center;
 }
 
 /* Underline on hover for publication links */
 .publications-column a:hover {
     text-decoration: underline; /* Underline on hover */
-    text-align: center;
 }
 
 /* Mobile Responsiveness */
