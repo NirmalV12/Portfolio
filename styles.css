@@ -323,23 +323,33 @@ h2 {
     flex: 1;
 }
 
+.education-column h3, .publications-column h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: left;  /* Ensures heading is left-aligned */
+}
+
 .education-column ul, .publications-column ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .education-column ul li, .publications-column ul li {
     margin-bottom: 15px;
 }
 
-.education-column h3, .publications-column h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+.education-column p, .publications-column p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    text-align: left; /* Ensures the text is left-aligned */
 }
 
+/* Links in Publications */
 .publications-column a {
     color: #007bff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .publications-column a:hover {
