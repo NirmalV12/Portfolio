@@ -51,9 +51,30 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
+.nav-links a.active {
+    background-color: #007bff;
+}
+
 .nav-links a:hover {
     background-color: #007bff;
 }
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        display: none; /* Hidden by default */
+    }
+    .nav-links.active {
+        display: flex; /* Display menu when active */
+    }
+}
+
 
 /* Hero Section */
 #hero {
