@@ -1,0 +1,457 @@
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #007bff;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('northern-lights.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: White;
+    opacity: 0.9;
+    flex-direction: column;
+}
+
+/* Blur effect for the background image */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    background-color: rgba(0, 0, 0, 10);  /* Semi-transparent black overlay */
+    z-index: -1;  /* Keep the dark overlay behind the content */
+    filter: blur(1000px);  /* Optional: Add blur if you want */
+}
+
+/* Hero Content Container */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+    z-index: 1;  /* Keeps the profile image above the blurred background */
+}
+
+/* Text Content (Name, Description, Social Icons) */
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 1.8rem;
+    margin-right: 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Scroll Down Link */
+.scroll-down {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-down:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    text-align: left;
+    font-size: 1.26em;
+}
+
+#about p {
+    font-size: 1.05em;
+    margin-top: 20px;
+    text-align: justify;		
+}
+
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+/* General container for the work experience */
+.experience-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Central Line */
+.central-line {
+    width: 2px;
+    background-color: #6A1B9A; /* Purple color */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Left Side Work Experience */
+.experience-left {
+    width: 60%; /* Adjust width to take up most of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Space between each work experience item */
+}
+
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+/* General container for the work experience */
+.experience-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Central Line */
+.central-line {
+    width: 2px;
+    background-color: #6A1B9A; /* Purple color */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Left Side Work Experience */
+.experience-left {
+    width: 60%; /* Adjust width to take up most of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Space between each work experience item */
+}
+
+/* Work Experience Items */
+.experience-item {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+
+/* Styling for each experience content block */
+.experience-content {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start; /* Align text and logo to the top */
+    gap: 15px; /* Space between logo and text */
+}
+
+/* Styling for company logo on the left side */
+.company-logo {
+    width: 50px; /* Set width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: round the corners of the logo */
+}
+
+/* Job titles styling */
+.experience-content h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center; /* Center the job title */
+    width: 100%; /* Make it take the full width of the container */
+}
+
+/* Timeline date styling */
+.timeline-date {
+    font-size: 1rem;
+    color: #6A1B9A;
+    margin-top: 5px;
+    margin-bottom: 20px; /* Added margin-bottom for spacing between date and description */
+    text-align: center; /* Center the timeline */
+    width: 100%; /* Make it take the full width of the container */
+}
+
+/* Description list styling */
+.experience-content ul {
+    list-style: disc;
+    padding-left: 20px; /* Indentation for bullet points */
+    text-align: justify; /* Justify the description text */
+    margin: 0;
+}
+
+/* List items (bullet points) */
+.experience-content li {
+    margin-bottom: 10px; /* Space between each bullet point */
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Work Experience Hover Effects */
+.experience-item:hover .experience-content {
+    background-color: #6A1B9A;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .experience-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .central-line {
+        display: none; /* Hide central line on mobile */
+    }
+
+    /* Adjust the experience content for better mobile viewing */
+    .experience-content {
+        padding: 15px;
+    }
+
+    /* Adjust logo size for mobile */
+    .company-logo {
+        width: 40px; /* Slightly smaller logo for mobile */
+    }
+
+    /* Adjust title and date for better alignment on mobile */
+    .experience-content h3, .timeline-date {
+        text-align: center;
+    }
+}
+
+/* Education & Publications Section */
+#education-publications {
+    padding: 80px 20px;
+}
+
+.education-publications-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.education-column, .publications-column {
+    flex: 1;
+}
+
+.education-column ul, .publications-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-column ul li, .publications-column ul li {
+    margin-bottom: 15px;
+}
+
+.education-column h3, .publications-column h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.publications-column a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.publications-column a:hover {
+    text-decoration: underline;
+}
+
+/* Certifications Section */
+#certifications {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.certifications-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.certifications-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
+}
+
+.certifications-column:first-child {
+    border-left: none;
+}
+
+.certification-tile {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-tile a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.certification-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certification-tile a:hover {
+    color: #007bff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .scroll-down {
+        bottom: 40px;
+    }
+}
