@@ -369,7 +369,7 @@ h2 {
     color: inherit; /* Remove blue color */
     text-decoration: underline; /* No underline by default */
     font-weight: bold; /* Make publication titles stand out */
-    text-align: left;
+    text-align: center;
 }
 
 /* Underline on hover for publication links */
