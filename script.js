@@ -9,8 +9,18 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         
         // Scroll to the section with dynamic offset
         window.scrollTo({
-            top: targetSection.offsetTop - navbarHeight, // Offset adjustment
+            top: targetSection.offsetTop - navbarHeight, // Adjust the target position
             behavior: 'smooth'
         });
     });
+});
+
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
 });
