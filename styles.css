@@ -235,7 +235,7 @@ h2 {
 
 /* Left Side Work Experience */
 .experience-left {
-    width: 60%; /* Adjust width to take up most of the space */
+    width: 75%; /* Adjust width to take up most of the space */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
