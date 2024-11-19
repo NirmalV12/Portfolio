@@ -165,13 +165,19 @@ footer {
 }
 
 footer a {
-    color: #007bff;
-    text-decoration: none;
+    color: white; /* Set the default color of the links to white */
+    text-decoration: none; /* Remove underline by default */
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline links on hover */
 }
+
+/* Prevent links from changing color to purple once clicked */
+footer a:visited {
+    color: white; /* Keep the links white after being clicked */
+}
+
 
 /* About Section */
 #about {
