@@ -311,22 +311,25 @@ h2 {
 /* Education & Publications Section */
 #education-publications {
     padding: 80px 20px;
+    background-color: #f8f8f8; /* Light background to differentiate from other sections */
 }
 
 .education-publications-grid {
     display: flex;
     gap: 40px;
     justify-content: space-between;
+    flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
 }
 
 .education-column, .publications-column {
     flex: 1;
+    min-width: 280px; /* Ensure proper layout on small screens */
 }
 
 .education-column h3, .publications-column h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    text-align: left;  /* Ensures heading is left-aligned */
+    text-align: center; /* Title remains centered */
 }
 
 .education-column ul, .publications-column ul {
@@ -337,23 +340,48 @@ h2 {
 
 .education-column ul li, .publications-column ul li {
     margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
-.education-column p, .publications-column p {
+/* Left-align degree names and university names in Education */
+.education-column p {
     font-size: 1.1rem;
     margin-top: 5px;
-    text-align: left; /* Ensures the text is left-aligned */
+    text-align: left;
 }
 
-/* Links in Publications */
+/* Ensure proper formatting for publications with left-aligned titles */
+.publications-column p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    text-align: left;
+}
+
 .publications-column a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+    color: inherit; /* Keep default text color for links */
+    text-decoration: none; /* No underline by default */
+    font-weight: bold; /* Make publication titles stand out */
 }
 
 .publications-column a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .education-publications-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-column, .publications-column {
+        width: 100%; /* Make columns full-width on small screens */
+        margin-bottom: 20px; /* Add space between columns */
+    }
+
+    .education-column h3, .publications-column h3 {
+        text-align: center; /* Keep titles centered on small screens */
+    }
 }
 
 /* Certifications Section */
