@@ -164,6 +164,10 @@ footer {
     padding: 20px;
 }
 
+footer h2 {
+    color: white; /* Set the "Contact" heading color to white */
+}
+
 footer a {
     color: white; /* Set the default color of the links to white */
     text-decoration: none; /* Remove underline by default */
