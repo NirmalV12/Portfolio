@@ -347,7 +347,11 @@ h2 {
 .education-column p {
     font-size: 1.1rem;
     margin-top: 5px;
-    text-align: left;
+    text-align: left; /* Left-align degree names and universities */
+}
+
+.education-column li {
+    text-align: left; /* Left-align degree names */
 }
 
 /* Ensure proper formatting for publications with left-aligned titles */
@@ -358,13 +362,14 @@ h2 {
 }
 
 .publications-column a {
-    color: inherit; /* Keep default text color for links */
+    color: inherit; /* Remove blue color */
     text-decoration: none; /* No underline by default */
     font-weight: bold; /* Make publication titles stand out */
 }
 
+/* Underline on hover for publication links */
 .publications-column a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Mobile Responsiveness */
